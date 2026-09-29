@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鍍術師 - 鍍膜科技的魔法革命</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- 導覽列 -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- 簡易 Logo 意象 -->
+                    <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                        ✧
+                    </div>
+                    <span class="font-bold text-xl tracking-wider text-slate-900">鍍術師</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#core" class="text-slate-600 hover:text-blue-600 font-medium">核心科技</a>
+                    <a href="#auto" class="text-slate-600 hover:text-blue-600 font-medium">汽車鍍膜</a>
+                    <a href="#glass" class="text-slate-600 hover:text-blue-600 font-medium">玻璃防護</a>
+                    <a href="#stone" class="text-slate-600 hover:text-blue-600 font-medium">石材防護</a>
+                    <a href="#b2b" class="text-slate-600 hover:text-blue-600 font-medium">產業應用</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區 (Hero Section) -->
+    <section class="hero-bg text-white pt-28 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">
+                鍍膜科技的<span class="text-blue-400">魔法革命</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-10">
+                貼近生活的無機陶瓷塗層，讓生活變得更便利
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-lg font-medium">
+                <div class="bg-white/10 px-6 py-3 rounded-full flex items-center gap-2 backdrop-blur-sm border border-white/20">
+                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    抗污漬
+                </div>
+                <div class="bg-white/10 px-6 py-3 rounded-full flex items-center gap-2 backdrop-blur-sm border border-white/20">
+                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    抗指紋
+                </div>
+                <div class="bg-white/10 px-6 py-3 rounded-full flex items-center gap-2 backdrop-blur-sm border border-white/20">
+                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    易清潔塗層
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心科技 (Why Choose Us) -->
+    <section id="core" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">為何要使用 鍍術師？</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">傳統市場主要由有機樹脂材料組成（如 PU、壓克力、環氧、酚醛等），發展似乎已到極限。我們採用未來的潛力材料——<strong class="text-blue-600">無機陶瓷材料 (聚矽氮烷 PSZ)</strong>。</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">🏺</div>
+                    <h3 class="text-xl font-bold mb-2">瓷器級防護</h3>
+                    <p class="text-slate-500 text-sm">源自無機材料的堅固特性</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">🛰️</div>
+                    <h3 class="text-xl font-bold mb-2">航太級科技</h3>
+                    <p class="text-slate-500 text-sm">預陶瓷化塗料技術</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-2">半導體應用</h3>
+                    <p class="text-slate-500 text-sm">高精密製程等級材料</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">🌍</div>
+                    <h3 class="text-xl font-bold mb-2">貼近生活</h3>
+                    <p class="text-slate-500 text-sm">國外大廠原料，品質保證</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 應用領域廣泛 -->
+    <section class="py-16 px-4 bg-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-10">廣泛的應用領域</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">石材防護</div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">工業脫膜</div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">金屬抗鏽</div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">汽車美容</div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">太陽能板</div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">屋頂磚瓦(瓷器)</div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">木材防水</div>
+                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">裝置藝術</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 汽車美容 (Auto) -->
+    <section id="auto" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-4xl font-black text-slate-900 mb-6">汽車美容 <span class="text-blue-600">完美進化</span></h2>
+                    <ul class="space-y-4 mb-8 text-lg text-slate-700">
+                        <li class="flex items-center gap-3">
+                            <span class="bg-blue-100 text-blue-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                            <strong>高亮度</strong>：車漆光澤大幅提升
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-blue-100 text-blue-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                            <strong>易施工</strong>：軟漆 & 硬漆皆適宜，新手友善
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-blue-100 text-blue-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                            <strong>低染塵</strong>：室外放置三個月依然潔淨
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-blue-100 text-blue-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                            <strong>爆滑手感</strong>：超疏水技術，水珠滑落不留痕
+                        </li>
+                    </ul>
+                    <p class="text-sm text-slate-500 bg-slate-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        * 真實效果展示：即使是休旅車 (CRV) 也能輕鬆完成鍍膜，享受鍍膜後水珠滑落的快感。
+                    </p>
+                </div>
+                
+                <!-- 產品比較區塊 -->
+                <div class="w-full md:w-1/2 bg-slate-900 rounded-3xl p-8 text-white shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6 text-yellow-400">汽車鍍膜科學大比拼</h3>
+                    <div class="space-y-6 relative z-10">
+                        <div class="border-b border-slate-700 pb-4">
+                            <h4 class="text-xl font-bold text-blue-300">13F 頂尖旗艦</h4>
+                            <p class="text-sm text-slate-300 mb-2">極致性能表現，提供最強防護與耐久性，適合追求完美的車主。</p>
+                            <div class="flex text-yellow-400 text-sm">硬度 ★★★★★ | 撥水 ★★★★★ | 滑順 ★★★★★</div>
+                        </div>
+                        <div class="border-b border-slate-700 pb-4">
+                            <h4 class="text-xl font-bold text-blue-300">28F 進階升級</h4>
+                            <p class="text-sm text-slate-300 mb-2">進階防護能力，全面提升漆面保護與化學性。</p>
+                            <div class="flex text-yellow-400 text-sm">硬度 ★★★★☆ | 撥水 ★★★★☆ | 滑順 ★★★★☆</div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-blue-300">6F 高效均衡</h4>
+                            <p class="text-sm text-slate-300 mb-2">均衡的性能表現，性價比出色，適合日常防護需求。</p>
+                            <div class="flex text-yellow-400 text-sm">硬度 ★★★★ | 撥水 ★★★★ | 滑順 ★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 施工四部曲 -->
+    <section class="py-16 px-4 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">專業施工四部曲 <span class="text-lg font-normal text-slate-500 block mt-2">(4-Step Application Guide)</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm relative pt-10">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl border-4 border-slate-50">1</div>
+                    <h3 class="font-bold text-lg mb-2 text-center text-blue-800">清潔與脫脂</h3>
+                    <p class="text-slate-600 text-sm text-center">全車徹底清潔並完全擦乾，務必使用脫脂劑去除油膜，確保鍍膜緊密附著。</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm relative pt-10">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl border-4 border-slate-50">2</div>
+                    <h3 class="font-bold text-lg mb-2 text-center text-blue-800">井字塗抹</h3>
+                    <p class="text-slate-600 text-sm text-center">將鍍膜劑適量滴於海綿上，以「井」字型均勻塗抹於漆面，避免遺漏。</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm relative pt-10">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl border-4 border-slate-50">3</div>
+                    <h3 class="font-bold text-lg mb-2 text-center text-blue-800">等待並擦拭</h3>
+                    <p class="text-slate-600 text-sm text-center">單區施工後等待約3分鐘，使用乾淨纖維布擦拭至完全乾淨無痕。</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm relative pt-10">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl border-4 border-slate-50">4</div>
+                    <h3 class="font-bold text-lg mb-2 text-center text-blue-800">固化成型期</h3>
+                    <p class="text-slate-600 text-sm text-center">施工後 <strong>6小時</strong> 內避免接觸水；<strong>3天</strong> 後方可進行正常洗車。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 玻璃防護 (Glass) -->
+    <section id="glass" class="py-20 px-4 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">全新奈米玻璃鍍膜</h2>
+                <p class="text-xl text-blue-400 italic">「不只是撥水，更是極致的隱形防護罩。」</p>
+                <p class="text-slate-400 mt-2">定義車窗的新標準。快速硬化，3分鐘即可下膜，雨刷不跳動。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                    <div class="text-blue-500 font-black text-3xl mb-2">01</div>
+                    <h3 class="text-xl font-bold mb-3">視覺盛宴 | 厚實光澤</h3>
+                    <p class="text-slate-400 text-sm">深邃鏡面，自帶高光。獨家導入「增亮奈米粒子」。</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                    <div class="text-blue-500 font-black text-3xl mb-2">02</div>
+                    <h3 class="text-xl font-bold mb-3">狂暴疏水 | 強效撥水</h3>
+                    <p class="text-slate-400 text-sm">風起水落，視線毫秒清晰。打造「超高接觸角」。</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                    <div class="text-blue-500 font-black text-3xl mb-2">03</div>
+                    <h3 class="text-xl font-bold mb-3">極致觸感 | 表面滑順</h3>
+                    <p class="text-slate-400 text-sm">絲綢觸感，指尖知道答案。完美改變玻璃的摩擦係數。</p>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                    <div class="text-blue-500 font-black text-3xl mb-2">04</div>
+                    <h3 class="text-xl font-bold mb-3">終極硬核 | 卓越耐久</h3>
+                    <p class="text-slate-400 text-sm">拒絕短命塗層！高分子密著技術，高密著鍵結，極致耐刷洗。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 石材防護 (Stone) -->
+    <section id="stone" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-4xl font-black text-slate-900 mb-6">石材的<span class="text-amber-600">完美盾牌</span></h2>
+                    <ul class="space-y-4 mb-8 text-lg text-slate-700">
+                        <li class="flex items-center gap-3">
+                            <span class="bg-amber-100 text-amber-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                            <strong>適用廣泛</strong>：天然石材、磁磚、抿洗石、清水模等
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-amber-100 text-amber-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                            <strong>耐化學性佳</strong>：可耐酸 & 鹼，抵禦醬油、咖啡、食用油
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-amber-100 text-amber-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                            <strong>防水極佳</strong>：水珠無法滲透內部，只能自然揮發
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-amber-100 text-amber-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
+                            <strong>優異手感</strong>：施工簡單，上膜後髒汙輕鬆擦拭
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="w-full md:w-1/2">
+                    <div class="bg-slate-100 p-6 rounded-3xl border border-slate-200">
+                        <h4 class="font-bold text-slate-800 mb-4 text-center">真實案例：華麗灰及雲夢山水洞石</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- <div class="bg-white p-4 rounded-xl text-center shadow-sm">
+                                <div class="h-32 bg-slate-200 rounded-lg mb-3 flex items-center justify-center text-slate-400">
+                                    [ 無鍍膜 示意 ]
+                                </div>
+                                <span class="text-sm font-bold text-red-500">易吃色滲透</span>
+                            </div> -->
+                            <!-- 左邊：無鍍膜 -->
+                            <div class="text-center">
+                                <!-- 加入真實圖片，設定 h-48 與 object-cover -->
+                                <img src="images/stone-before.png" class="w-full h-48 object-cover rounded-lg mb-3 shadow-md" alt="無鍍膜">
+                                <p class="font-bold text-slate-700">No 鍍膜</p>
+                                <p class="text-sm text-slate-500 mt-1">水珠直接滲透，容易留下水斑</p>
+                            </div>
+                            <!-- 右邊：有鍍膜 -->
+                            <div class="text-center">
+                                <!-- 加入真實圖片，設定一模一樣的 h-48 與 object-cover -->
+                                <img src="images/stone-after.png" class="w-full h-48 object-cover rounded-lg mb-3 shadow-md" alt="有鍍膜">
+                                <p class="font-bold text-orange-500">洞石 - 有鍍膜</p>
+                                <p class="text-sm text-slate-500 mt-1">水形成水珠，無法滲透，自然揮發</p>
+                            </div>
+
+                            <!-- 
+                            <div class="bg-white p-4 rounded-xl text-center shadow-sm border-2 border-amber-400">
+                                <div class="h-32 bg-slate-300 rounded-lg mb-3 flex items-center justify-center text-slate-600 relative overflow-hidden">
+                                    <!-- 模擬水珠 -->
+                                    <!-- <div class="absolute w-4 h-4 bg-blue-400/50 rounded-full top-4 left-6 shadow-sm"></div>
+                                    <div class="absolute w-3 h-3 bg-blue-400/50 rounded-full top-8 right-8 shadow-sm"></div>
+                                    <div class="absolute w-5 h-5 bg-blue-400/50 rounded-full bottom-6 left-12 shadow-sm"></div>
+                                    [ 有鍍膜 示意 ]
+                                </div>
+                                <span class="text-sm font-bold text-green-600">水珠凝結 不留痕</span>
+                            </div> --> 
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 其他產業應用材料 (B2B) -->
+    <section id="b2b" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">多元化高機能材料服務</h2>
+            <p class="text-center text-slate-600 mb-12">為各產業提供創新的解決方案</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 居家鍍膜 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-blue-400">
+                    <h3 class="text-xl font-bold mb-4 text-slate-800">居家鍍膜</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• 應用於家具、地板、衛浴、玻璃等</li>
+                        <li>• 抗污、防霉、易清潔</li>
+                        <li>• 透明隱形，長效保護</li>
+                    </ul>
+                </div>
+                
+                <!-- 液態矽膠材料 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-cyan-400">
+                    <h3 class="text-xl font-bold mb-4 text-slate-800">液態矽膠材料 (LIMS)</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• 優異的耐熱性與耐候性</li>
+                        <li>• 高透明、高撕裂強度</li>
+                        <li>• 應用：電子、光學、醫療器材等</li>
+                    </ul>
+                </div>
+
+                <!-- 面板材料 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-purple-400">
+                    <h3 class="text-xl font-bold mb-4 text-slate-800">面板/顯示器材料</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• 黑色光阻 (Black PR) / 透明光阻 (Clear PR)</li>
+                        <li>• 高遮光性、高解析度圖形化</li>
+                        <li>• Overcoating 塗層保護</li>
+                    </ul>
+                </div>
+
+                <!-- 超高耐溫陶瓷塗層 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-red-500">
+                    <h3 class="text-xl font-bold mb-4 text-slate-800">超高耐溫陶瓷塗層</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• 耐高溫 800°C 以上</li>
+                        <li>• 抗氧化、耐腐蝕、耐磨損</li>
+                        <li>• 應用：航太、鍋爐、引擎、工業爐具等</li>
+                    </ul>
+                </div>
+
+                <!-- 半導體材料 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-indigo-500 lg:col-span-2">
+                    <h3 class="text-xl font-bold mb-4 text-slate-800">半導體封裝材料</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-600">
+                        <div>
+                            <strong>絕緣層 (RDL製程用PI材料)</strong>
+                            <p>高耐熱性、低介電損耗、優異的平坦化與覆蓋性。<br>應用：先進封裝 (Fan-out)。</p>
+                        </div>
+                        <div>
+                            <strong>暫固膠 / 離型層</strong>
+                            <p>高黏著力與可解膠性，優異的離型性。<br>應用：晶圓減薄、臨時鍵合、晶圓封裝。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="mb-2">鍍術師 Coat Artisan Technology - 魔法革命</p>
+            <p class="text-sm">© 2026 Ultimate Paint Protection. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
