@@ -297,61 +297,140 @@
 
 
     <!-- 汽車美容 (Auto) -->
-    <section id="auto" class="py-20 px-4 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="w-full md:w-1/2">
-                    <h2 class="text-4xl font-black text-slate-900 mb-6">汽車美容 <span class="text-blue-600">完美進化</span></h2>
-                    <ul class="space-y-4 mb-8 text-lg text-slate-700">
-                        <li class="flex items-center gap-3">
-                            <span class="bg-blue-100 text-blue-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
-                            <strong>高亮度</strong>：車漆光澤大幅提升
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="bg-blue-100 text-blue-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
-                            <strong>易施工</strong>：軟漆 & 硬漆皆適宜，新手友善
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="bg-blue-100 text-blue-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
-                            <strong>低染塵</strong>：室外放置三個月依然潔淨
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="bg-blue-100 text-blue-600 p-1 rounded-full"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></span>
-                            <strong>爆滑手感</strong>：超疏水技術，水珠滑落不留痕
-                        </li>
-                    </ul>
-                    <p class="text-sm text-slate-500 bg-slate-50 p-4 rounded-lg border-l-4 border-blue-500">
-                        * 真實效果展示：即使是休旅車 (CRV) 也能輕鬆完成鍍膜，享受鍍膜後水珠滑落的快感。
-                    </p>
-                </div>
+    <!-- 汽車美容區塊 -->
+    <section id="car" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 
-                <!-- 產品比較區塊 -->
-                <div class="w-full md:w-1/2 bg-slate-900 rounded-3xl p-8 text-white shadow-2xl relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4 opacity-10">
-                        <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <!-- 左側欄位 (佔 7 格)：標題、特點與緊湊實測圖 -->
+                <div class="lg:col-span-7 flex flex-col justify-between h-full space-y-6">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">
+                            汽車美容 <span class="text-blue-600">完美進化</span>
+                        </h2>
+                        
+                        <!-- 四大特色標籤 -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+                            <div class="flex items-start gap-2.5 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <span class="w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block text-sm">高亮度</span>
+                                    <span class="text-slate-500">車漆光澤大幅提升，深邃鏡面</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2.5 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <span class="w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block text-sm">易施工</span>
+                                    <span class="text-slate-500">軟漆 & 硬漆皆適宜，新手友善</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2.5 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <span class="w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block text-sm">低染塵</span>
+                                    <span class="text-slate-500">室外放置三個月依然潔淨</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-2.5 bg-slate-50 p-3 rounded-lg border border-slate-100">
+                                <span class="w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block text-sm">爆滑手感</span>
+                                    <span class="text-slate-500">超疏水技術，水珠滑落不留痕</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-6 text-yellow-400">汽車鍍膜科學大比拼</h3>
-                    <div class="space-y-6 relative z-10">
-                        <div class="border-b border-slate-700 pb-4">
-                            <h4 class="text-xl font-bold text-blue-300">13F 頂尖旗艦</h4>
-                            <p class="text-sm text-slate-300 mb-2">極致性能表現，提供最強防護與耐久性，適合追求完美的車主。</p>
-                            <div class="flex text-yellow-400 text-sm">硬度 ★★★★★ | 撥水 ★★★★★ | 滑順 ★★★★★</div>
+
+                    <!-- 實測對照卡片 (並排雙圖展示：高光澤完工 vs 撥水防護對比) -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-slate-700">實測效果展示</span>
+                            <span class="text-[11px] text-blue-600 bg-blue-100/60 px-2 py-0.5 rounded font-medium">CRV 等休旅車亦可輕鬆鍍膜</span>
                         </div>
-                        <div class="border-b border-slate-700 pb-4">
-                            <h4 class="text-xl font-bold text-blue-300">28F 進階升級</h4>
-                            <p class="text-sm text-slate-300 mb-2">進階防護能力，全面提升漆面保護與化學性。</p>
-                            <div class="flex text-yellow-400 text-sm">硬度 ★★★★☆ | 撥水 ★★★★☆ | 滑順 ★★★★☆</div>
+                        
+                        <div class="grid grid-cols-2 gap-3">
+                            <!-- 圖 1：高光澤成效 -->
+                            <div class="relative rounded-lg overflow-hidden border border-slate-200 aspect-[4/3] bg-slate-200">
+                                <img src="images/car_gloss_finish.jpg" alt="高光澤完工" class="w-full h-full object-cover">
+                                <div class="absolute bottom-1.5 left-1.5 right-1.5 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] py-0.5 px-1.5 rounded text-center truncate">
+                                    糖果般深邃光澤
+                                </div>
+                            </div>
+
+                            <!-- 圖 2：疏水與防護對比 -->
+                            <div class="relative rounded-lg overflow-hidden border border-slate-200 aspect-[4/3] bg-slate-200">
+                                <img src="images/car_dust_ours.jpg" alt="鍍膜防護實測" class="w-full h-full object-cover">
+                                <div class="absolute bottom-1.5 left-1.5 right-1.5 bg-blue-900/80 backdrop-blur-sm text-white text-[11px] py-0.5 px-1.5 rounded text-center truncate">
+                                    超疏水・水珠滑落
+                                </div>
+                            </div>
                         </div>
+                        
+                        <p class="text-[11px] text-slate-500 mt-2.5 leading-tight">
+                            * 施工後形成透明屏障，長效阻隔酸雨、油汙與微塵，洗車維護省時省力。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 右側欄位 (佔 5 格)：汽車鍍膜科學大比拼 (深色卡片) -->
+                <div class="lg:col-span-5 bg-slate-900 text-white p-6 sm:p-7 rounded-2xl shadow-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-amber-400 mb-5 pb-3 border-b border-slate-800 flex items-center justify-between">
+                        <span>汽車鍍膜科學大比拼</span>
+                        <span class="text-xs font-normal text-slate-400">產品戰力表</span>
+                    </h3>
+                    
+                    <div class="space-y-5">
+                        <!-- 13F -->
+                        <div class="border-b border-slate-800/80 pb-4">
+                            <div class="flex items-baseline justify-between mb-1">
+                                <h4 class="text-base font-bold text-white">13F 頂尖旗艦</h4>
+                                <span class="text-[10px] text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">極致防護</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mb-2">極致性能表現，提供最強防護與耐久性，適合追求完美的車主。</p>
+                            <div class="text-[11px] text-amber-300 space-x-2">
+                                <span>硬度 ★★★★★★</span>
+                                <span>撥水 ★★★★★★</span>
+                                <span>滑順 ★★★★★★</span>
+                            </div>
+                        </div>
+
+                        <!-- 28F -->
+                        <div class="border-b border-slate-800/80 pb-4">
+                            <div class="flex items-baseline justify-between mb-1">
+                                <h4 class="text-base font-bold text-white">28F 進階升級</h4>
+                                <span class="text-[10px] text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded border border-blue-400/20">耐化學性</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mb-2">進階防護能力，全面提升漆面保護與耐化學性。</p>
+                            <div class="text-[11px] text-amber-300 space-x-2">
+                                <span>硬度 ★★★★★☆</span>
+                                <span>撥水 ★★★★★☆</span>
+                                <span>滑順 ★★★★★☆</span>
+                            </div>
+                        </div>
+
+                        <!-- 6F -->
                         <div>
-                            <h4 class="text-xl font-bold text-blue-300">6F 高效均衡</h4>
-                            <p class="text-sm text-slate-300 mb-2">均衡的性能表現，性價比出色，適合日常防護需求。</p>
-                            <div class="flex text-yellow-400 text-sm">硬度 ★★★★ | 撥水 ★★★★ | 滑順 ★★★★</div>
+                            <div class="flex items-baseline justify-between mb-1">
+                                <h4 class="text-base font-bold text-white">6F 高效均衡</h4>
+                                <span class="text-[10px] text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">高性價比</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mb-2">均衡的性能表現，性價比出色，適合日常防護需求。</p>
+                            <div class="text-[11px] text-amber-300 space-x-2">
+                                <span>硬度 ★★★★</span>
+                                <span>撥水 ★★★★★</span>
+                                <span>滑順 ★★★★</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
+
+
 
     <!-- 施工四部曲 -->
     <section class="py-16 px-4 bg-slate-50">
