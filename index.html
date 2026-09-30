@@ -211,21 +211,90 @@
 
 
     <!-- 應用領域廣泛 -->
-    <section class="py-16 px-4 bg-slate-100">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-2xl font-bold text-center mb-10">廣泛的應用領域</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">石材防護</div>
-                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">工業脫膜</div>
-                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">金屬抗鏽</div>
-                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">汽車美容</div>
-                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">太陽能板</div>
-                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">屋頂磚瓦(瓷器)</div>
-                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">木材防水</div>
-                <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-slate-700">裝置藝術</div>
+    <!-- 廣泛的應用領域 區塊 -->
+    <section class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">
+                    廣泛的應用領域
+                </h2>
+                <p class="mt-4 text-base text-slate-600">
+                    從居家建材到工業與高階車用，提供全方位的表面防護解決方案。
+                </p>
+            </div>
+
+            <!-- 8 宮格圖片卡片 (手機 2 欄 / 電腦 4 欄) -->
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                
+                <!-- 1. 石材 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 aspect-[4/3] bg-slate-100">
+                    <img src="images/app_stone.jpg" alt="石材" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                        <span class="text-white font-bold text-sm sm:text-base tracking-wide drop-shadow">石材</span>
+                    </div>
+                </div>
+
+                <!-- 2. 脫模 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 aspect-[4/3] bg-slate-100">
+                    <img src="images/app_mold.jpg" alt="脫模" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                        <span class="text-white font-bold text-sm sm:text-base tracking-wide drop-shadow">脫模</span>
+                    </div>
+                </div>
+
+                <!-- 3. 金屬 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 aspect-[4/3] bg-slate-100">
+                    <img src="images/app_metal.jpg" alt="金屬" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                        <span class="text-white font-bold text-sm sm:text-base tracking-wide drop-shadow">金屬</span>
+                    </div>
+                </div>
+
+                <!-- 4. 汽車美容 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 aspect-[4/3] bg-slate-100">
+                    <img src="images/app_car.jpg" alt="汽車美容" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                        <span class="text-white font-bold text-sm sm:text-base tracking-wide drop-shadow">汽車美容</span>
+                    </div>
+                </div>
+
+                <!-- 5. 太陽能板 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 aspect-[4/3] bg-slate-100">
+                    <img src="images/app_solar.jpg" alt="太陽能板" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                        <span class="text-white font-bold text-sm sm:text-base tracking-wide drop-shadow">太陽能板</span>
+                    </div>
+                </div>
+
+                <!-- 6. 屋頂磚瓦 (瓷器) -->
+                <div class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 aspect-[4/3] bg-slate-100">
+                    <img src="images/app_roof.jpg" alt="屋頂磚瓦(瓷器)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                        <span class="text-white font-bold text-sm sm:text-base tracking-wide drop-shadow">屋頂磚瓦 (瓷器)</span>
+                    </div>
+                </div>
+
+                <!-- 7. 木材 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 aspect-[4/3] bg-slate-100">
+                    <img src="images/app_wood.jpg" alt="木材" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                        <span class="text-white font-bold text-sm sm:text-base tracking-wide drop-shadow">木材</span>
+                    </div>
+                </div>
+
+                <!-- 8. 裝置藝術 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 aspect-[4/3] bg-slate-100">
+                    <img src="images/app_art.jpg" alt="裝置藝術" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                        <span class="text-white font-bold text-sm sm:text-base tracking-wide drop-shadow">裝置藝術</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
+
 
     <!-- 汽車美容 (Auto) -->
     <section id="auto" class="py-20 px-4 bg-white">
