@@ -31,12 +31,10 @@
     <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 flex items-center gap-2">
-                    <!-- 簡易 Logo 意象 -->
-                    <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                        ✧
-                    </div>
-                    <span class="font-bold text-xl tracking-wider text-slate-900">鍍術師</span>
+                <!-- 導覽列品牌區塊 -->
+                <div class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="鍍術師 Logo" class="h-10 w-auto object-contain">
+                    <span class="text-xl font-bold tracking-tight text-slate-900">鍍術師 <span class="text-sm font-normal text-slate-500">Coat Artisan</span></span>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#core" class="text-slate-600 hover:text-blue-600 font-medium">核心科技</a>
@@ -51,6 +49,13 @@
 
     <!-- 主視覺區 (Hero Section) -->
     <section class="hero-bg text-white pt-28 pb-20 px-4">
+        <!-- Hero 區域上方置中 Logo -->
+        <div class="flex justify-center mb-6">
+            <div class="p-3 bg-white/80 rounded-full shadow-lg border border-amber-100 backdrop-blur-sm">
+                <img src="images/logo.png" alt="鍍術師" class="w-20 h-20 sm:w-24 sm:h-24 object-contain">
+            </div>
+        </div>
+
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">
                 鍍膜科技的<span class="text-blue-400">魔法革命</span>
@@ -76,7 +81,7 @@
     </section>
 
     <!-- 核心科技 (Why Choose Us) -->
-    <section id="core" class="py-20 px-4 bg-white">
+    <!-- <section id="core" class="py-20 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-slate-900 mb-4">為何要使用 鍍術師？</h2>
@@ -106,7 +111,104 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <!-- 為何要使用 鍍術師 區塊 -->
+    <section class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">
+                    為何要使用 <span class="text-blue-600">鍍術師</span>？
+                </h2>
+                <p class="mt-4 text-base text-slate-600 leading-relaxed">
+                    傳統市場主要由有機樹脂材料組成（如 PU、壓克力、環氧、酚醛等），發展似乎已到極限。<br class="hidden sm:inline">
+                    我們採用未來的潛力材料 —— <span class="font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">無機陶瓷材料（聚矽氮烷 PSZ）</span>。
+                </p>
+            </div>
+
+            <!-- 科技融合流程：3大核心性質相加 ➔ 貼近生活 -->
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-3">
+                
+                <!-- 1. 瓷器級防護 -->
+                <div class="w-full lg:w-64 bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-40 overflow-hidden bg-slate-100">
+                        <img src="images/tech_porcelain.jpg" alt="瓷器級防護" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-slate-900 text-base">瓷器級防護</h3>
+                        <p class="text-xs text-slate-500 mt-1">源自無機材料的堅固特性</p>
+                    </div>
+                </div>
+
+                <!-- 加號 1 -->
+                <div class="flex items-center justify-center text-blue-500 py-1 lg:py-0">
+                    <div class="w-10 h-10 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center shadow-inner">
+                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 2. 航太級科技 -->
+                <div class="w-full lg:w-64 bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-40 overflow-hidden bg-slate-100">
+                        <img src="images/tech_aerospace.jpg" alt="航太級科技" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-slate-900 text-base">航太級科技</h3>
+                        <p class="text-xs text-slate-500 mt-1">預陶瓷化塗料技術</p>
+                    </div>
+                </div>
+
+                <!-- 加號 2 -->
+                <div class="flex items-center justify-center text-blue-500 py-1 lg:py-0">
+                    <div class="w-10 h-10 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center shadow-inner">
+                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 3. 半導體應用 -->
+                <div class="w-full lg:w-64 bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="h-40 overflow-hidden bg-slate-100">
+                        <img src="images/tech_semiconductor.jpg" alt="半導體應用" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-bold text-slate-900 text-base">半導體應用</h3>
+                        <p class="text-xs text-slate-500 mt-1">高精密製程等級材料</p>
+                    </div>
+                </div>
+
+                <!-- 轉化箭頭 (電腦版向右，手機版向下) -->
+                <div class="flex items-center justify-center py-2 lg:py-0">
+                    <div class="w-11 h-11 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white flex items-center justify-center shadow-md transform lg:rotate-0 rotate-90">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 4. 結晶成果：貼近生活 (鍍術師) -->
+                <div class="w-full lg:w-64 bg-gradient-to-b from-blue-50/80 to-white rounded-2xl shadow-md border-2 border-blue-500/80 overflow-hidden relative group">
+                    <div class="absolute top-2 right-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-sm z-10">
+                        核心成果
+                    </div>
+                    <div class="h-40 overflow-hidden bg-slate-100 relative">
+                        <img src="images/tech_life.jpg" alt="貼近生活" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="font-extrabold text-blue-700 text-base">鍍術師 · 貼近生活</h3>
+                        <p class="text-xs text-slate-600 mt-1 font-medium">國外大廠原料，品質保證</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
+
+
+
 
     <!-- 應用領域廣泛 -->
     <section class="py-16 px-4 bg-slate-100">
@@ -191,24 +293,29 @@
                 <div class="bg-white p-6 rounded-2xl shadow-sm relative pt-10">
                     <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl border-4 border-slate-50">1</div>
                     <h3 class="font-bold text-lg mb-2 text-center text-blue-800">清潔與脫脂</h3>
+                    <!-- 插入圖片，使用 h-32 (固定高度) 與 object-contain (完整顯示不裁切) -->
+                    <img src="images/application_guide_1.jpg" class="w-full h-48 object-contain mb-3" alt="清潔與脫脂">
                     <p class="text-slate-600 text-sm text-center">全車徹底清潔並完全擦乾，務必使用脫脂劑去除油膜，確保鍍膜緊密附著。</p>
                 </div>
                 <!-- Step 2 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm relative pt-10">
                     <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl border-4 border-slate-50">2</div>
                     <h3 class="font-bold text-lg mb-2 text-center text-blue-800">井字塗抹</h3>
+                    <img src="images/application_guide_2.jpg" class="w-full h-48 object-contain mb-3" alt="井字塗抹">
                     <p class="text-slate-600 text-sm text-center">將鍍膜劑適量滴於海綿上，以「井」字型均勻塗抹於漆面，避免遺漏。</p>
                 </div>
                 <!-- Step 3 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm relative pt-10">
                     <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl border-4 border-slate-50">3</div>
                     <h3 class="font-bold text-lg mb-2 text-center text-blue-800">等待並擦拭</h3>
+                    <img src="images/application_guide_3.jpg" class="w-full h-48 object-contain mb-3" alt="等待並擦拭">
                     <p class="text-slate-600 text-sm text-center">單區施工後等待約3分鐘，使用乾淨纖維布擦拭至完全乾淨無痕。</p>
                 </div>
                 <!-- Step 4 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm relative pt-10">
                     <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl border-4 border-slate-50">4</div>
                     <h3 class="font-bold text-lg mb-2 text-center text-blue-800">固化成型期</h3>
+                    <img src="images/application_guide_4.jpg" class="w-full h-48 object-contain mb-3" alt="固化成型期">
                     <p class="text-slate-600 text-sm text-center">施工後 <strong>6小時</strong> 內避免接觸水；<strong>3天</strong> 後方可進行正常洗車。</p>
                 </div>
             </div>
@@ -224,7 +331,7 @@
                 <p class="text-slate-400 mt-2">定義車窗的新標準。快速硬化，3分鐘即可下膜，雨刷不跳動。</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
                     <div class="text-blue-500 font-black text-3xl mb-2">01</div>
                     <h3 class="text-xl font-bold mb-3">視覺盛宴 | 厚實光澤</h3>
@@ -245,7 +352,99 @@
                     <h3 class="text-xl font-bold mb-3">終極硬核 | 卓越耐久</h3>
                     <p class="text-slate-400 text-sm">拒絕短命塗層！高分子密著技術，高密著鍵結，極致耐刷洗。</p>
                 </div>
+            </div> -->
+
+            <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+                
+                <div class="relative p-6 rounded-xl overflow-hidden border border-slate-700 min-h-[220px]"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('images/glass_bg_1.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative z-10">
+                        <h3 class="text-5xl font-black text-blue-500 mb-3 drop-shadow-md">01</h3>
+                        <h4 class="text-xl font-bold text-white mb-2 drop-shadow-md">視覺盛宴 | 厚實光澤</h4>
+                        <p class="text-slate-200 text-sm leading-relaxed drop-shadow">深邃鏡面，自帶高光。獨家導入「增亮奈米粒子」。</p>
+                    </div>
+                </div>
+
+                
+                <div class="relative p-6 rounded-xl overflow-hidden border border-slate-700 min-h-[220px]"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('images/glass_bg_2.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative z-10">
+                        <h3 class="text-5xl font-black text-blue-500 mb-3 drop-shadow-md">02</h3>
+                        <h4 class="text-xl font-bold text-white mb-2 drop-shadow-md">狂暴疏水 | 強效撥水</h4>
+                        <p class="text-slate-200 text-sm leading-relaxed drop-shadow">風起水落，視線毫秒清晰。打造「超高接觸角」。</p>
+                    </div>
+                </div>
+
+                
+                <div class="relative p-6 rounded-xl overflow-hidden border border-slate-700 min-h-[220px]"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('images/glass_bg_3.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative z-10">
+                        <h3 class="text-5xl font-black text-blue-500 mb-3 drop-shadow-md">03</h3>
+                        <h4 class="text-xl font-bold text-white mb-2 drop-shadow-md">極致觸感 | 表面滑順</h4>
+                        <p class="text-slate-200 text-sm leading-relaxed drop-shadow">絲綢觸感，指尖知道答案。改變玻璃的摩擦係數。</p>
+                    </div>
+                </div>
+
+                
+                <div class="relative p-6 rounded-xl overflow-hidden border border-slate-700 min-h-[220px]"
+                    style="background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('images/glass_bg_4.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative z-10">
+                        <h3 class="text-5xl font-black text-blue-500 mb-3 drop-shadow-md">04</h3>
+                        <h4 class="text-xl font-bold text-white mb-2 drop-shadow-md">終極硬核 | 卓越耐久</h4>
+                        <p class="text-slate-200 text-sm leading-relaxed drop-shadow">高密著鍵結，耐刷洗。拒絕短命塗層！高分子密著技術。</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+                <!-- 01 視覺盛宴 -->
+                <div class="relative p-6 rounded-xl overflow-hidden border border-slate-700/60 shadow-lg min-h-[220px] flex flex-col justify-end"
+                    style="background-image: linear-gradient(to right, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.2) 60%, rgba(15, 23, 42, 0.1) 100%), url('images/glass_bg_1.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative z-10">
+                        <h3 class="text-5xl font-black text-blue-400 mb-2" style="text-shadow: 0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(59,130,246,0.3);">01</h3>
+                        <h4 class="text-xl font-bold text-white mb-2" style="text-shadow: 0 2px 8px rgba(0,0,0,0.9);">視覺盛宴 | 厚實光澤</h4>
+                        <p class="text-slate-100 text-sm leading-relaxed" style="text-shadow: 0 1px 6px rgba(0,0,0,0.9);">深邃鏡面，自帶高光。獨家導入「增亮奈米粒子」。</p>
+                    </div>
+                </div>
+
+                <!-- 02 狂暴疏水 -->
+                <div class="relative p-6 rounded-xl overflow-hidden border border-slate-700/60 shadow-lg min-h-[220px] flex flex-col justify-end"
+                    style="background-image: linear-gradient(to right, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.2) 60%, rgba(15, 23, 42, 0.1) 100%), url('images/glass_bg_2.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative z-10">
+                        <h3 class="text-5xl font-black text-blue-400 mb-2" style="text-shadow: 0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(59,130,246,0.3);">02</h3>
+                        <h4 class="text-xl font-bold text-white mb-2" style="text-shadow: 0 2px 8px rgba(0,0,0,0.9);">狂暴疏水 | 強效撥水</h4>
+                        <p class="text-slate-100 text-sm leading-relaxed" style="text-shadow: 0 1px 6px rgba(0,0,0,0.9);">風起水落，視線毫秒清晰。打造「超高接觸角」。</p>
+                    </div>
+                </div>
+
+                <!-- 03 極致觸感 -->
+                <div class="relative p-6 rounded-xl overflow-hidden border border-slate-700/60 shadow-lg min-h-[220px] flex flex-col justify-end"
+                    style="background-image: linear-gradient(to right, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.2) 60%, rgba(15, 23, 42, 0.1) 100%), url('images/glass_bg_3.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative z-10">
+                        <h3 class="text-5xl font-black text-blue-400 mb-2" style="text-shadow: 0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(59,130,246,0.3);">03</h3>
+                        <h4 class="text-xl font-bold text-white mb-2" style="text-shadow: 0 2px 8px rgba(0,0,0,0.9);">極致觸感 | 表面滑順</h4>
+                        <p class="text-slate-100 text-sm leading-relaxed" style="text-shadow: 0 1px 6px rgba(0,0,0,0.9);">絲綢觸感，指尖知道答案。改變玻璃的摩擦係數。</p>
+                    </div>
+                </div>
+
+                <!-- 04 終極硬核 -->
+                <div class="relative p-6 rounded-xl overflow-hidden border border-slate-700/60 shadow-lg min-h-[220px] flex flex-col justify-end"
+                    style="background-image: linear-gradient(to right, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.2) 60%, rgba(15, 23, 42, 0.1) 100%), url('images/glass_bg_4.jpg'); background-size: cover; background-position: center;">
+                    <div class="relative z-10">
+                        <h3 class="text-5xl font-black text-blue-400 mb-2" style="text-shadow: 0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(59,130,246,0.3);">04</h3>
+                        <h4 class="text-xl font-bold text-white mb-2" style="text-shadow: 0 2px 8px rgba(0,0,0,0.9);">終極硬核 | 卓越耐久</h4>
+                        <p class="text-slate-100 text-sm leading-relaxed" style="text-shadow: 0 1px 8px rgba(0,0,0,0.9);">高密著鍵結，耐刷洗。拒絕短命塗層！高分子密著技術。</p>
+                    </div>
+                </div>
             </div>
+
+
+
+
+
+
+
+
         </div>
     </section>
 
@@ -391,6 +590,11 @@
         <div class="max-w-7xl mx-auto px-4">
             <p class="mb-2">鍍術師 Coat Artisan Technology - 魔法革命</p>
             <p class="text-sm">© 2026 Ultimate Paint Protection. All rights reserved.</p>
+        </div>
+        <!-- 頁尾 Logo 與版權 -->
+        <div class="flex flex-col items-center justify-center gap-3">
+            <img src="images/logo.png" alt="鍍術師" class="h-12 w-auto object-contain opacity-90">
+            <p class="text-sm text-slate-500">© 2026 鍍術師 Coat Artisan. All rights reserved.</p>
         </div>
     </footer>
 
