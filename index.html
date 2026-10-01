@@ -373,53 +373,118 @@
                     </div>
                 </div>
 
-                <!-- 右側欄位 (佔 5 格)：汽車鍍膜科學大比拼 (深色卡片) -->
-                <div class="lg:col-span-5 bg-slate-900 text-white p-6 sm:p-7 rounded-2xl shadow-xl border border-slate-800">
-                    <h3 class="text-xl font-bold text-amber-400 mb-5 pb-3 border-b border-slate-800 flex items-center justify-between">
-                        <span>汽車鍍膜科學大比拼</span>
-                        <span class="text-xs font-normal text-slate-400">產品戰力表</span>
-                    </h3>
-                    
-                    <div class="space-y-5">
-                        <!-- 13F -->
-                        <div class="border-b border-slate-800/80 pb-4">
-                            <div class="flex items-baseline justify-between mb-1">
-                                <h4 class="text-base font-bold text-white">13F 頂尖旗艦</h4>
-                                <span class="text-[10px] text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">極致防護</span>
+                <!-- 右側欄位：戰力大比拼 比較表格 -->
+                <div class="lg:col-span-5 bg-slate-900 text-white p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <!-- 表格標題 -->
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800">
+                            <div class="flex items-center gap-2">
+                                <span class="inline-block w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse"></span>
+                                <h3 class="text-lg sm:text-xl font-bold text-white tracking-wide">戰力大比拼</h3>
                             </div>
-                            <p class="text-xs text-slate-400 mb-2">極致性能表現，提供最強防護與耐久性，適合追求完美的車主。</p>
-                            <div class="text-[11px] text-amber-300 space-x-2">
-                                <span>硬度 ★★★★★★</span>
-                                <span>撥水 ★★★★★★</span>
-                                <span>滑順 ★★★★★★</span>
-                            </div>
+                            <span class="text-[11px] font-medium text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">13F vs. 6F vs. 28F</span>
                         </div>
 
-                        <!-- 28F -->
-                        <div class="border-b border-slate-800/80 pb-4">
-                            <div class="flex items-baseline justify-between mb-1">
-                                <h4 class="text-base font-bold text-white">28F 進階升級</h4>
-                                <span class="text-[10px] text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded border border-blue-400/20">耐化學性</span>
-                            </div>
-                            <p class="text-xs text-slate-400 mb-2">進階防護能力，全面提升漆面保護與耐化學性。</p>
-                            <div class="text-[11px] text-amber-300 space-x-2">
-                                <span>硬度 ★★★★★☆</span>
-                                <span>撥水 ★★★★★☆</span>
-                                <span>滑順 ★★★★★☆</span>
-                            </div>
+                        <!-- 橫向滾動容器 (確保手機端瀏覽不破版) -->
+                        <div class="overflow-x-auto pb-1">
+                            <table class="w-full text-left border-collapse min-w-[320px]">
+                                <thead>
+                                    <tr class="border-b border-slate-800 text-[11px] sm:text-xs">
+                                        <th class="py-2.5 px-1.5 text-slate-400 font-medium w-[22%]">項目</th>
+                                        <th class="py-2.5 px-1.5 text-center text-slate-300 w-[19%]">
+                                            <div class="font-bold text-slate-200">他社品</div>
+                                            <div class="text-[9px] text-slate-400 scale-90">基礎防護</div>
+                                        </th>
+                                        <th class="py-2.5 px-1.5 text-center text-blue-400 w-[19%] bg-blue-950/20 rounded-t-lg">
+                                            <div class="font-extrabold text-blue-300">13F</div>
+                                            <div class="text-[9px] text-blue-400 scale-90">頂尖旗艦</div>
+                                        </th>
+                                        <th class="py-2.5 px-1.5 text-center text-emerald-400 w-[19%] bg-emerald-950/20 rounded-t-lg">
+                                            <div class="font-extrabold text-emerald-300">6F</div>
+                                            <div class="text-[9px] text-emerald-400 scale-90">高效均衡</div>
+                                        </th>
+                                        <th class="py-2.5 px-1.5 text-center text-amber-400 w-[21%] bg-amber-950/20 rounded-t-lg">
+                                            <div class="font-extrabold text-amber-300">28F</div>
+                                            <div class="text-[9px] text-amber-400 scale-90">進階升級</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-800/60 text-xs">
+                                    <!-- 硬度 -->
+                                    <tr>
+                                        <td class="py-2.5 px-1.5 font-medium text-slate-300 flex items-center gap-1">
+                                            <span>💎</span> 硬度
+                                        </td>
+                                        <td class="py-2.5 px-1.5 text-center text-slate-400 text-[11px]">★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-blue-400 font-semibold text-[11px] bg-blue-950/20">★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-emerald-400 font-semibold text-[11px] bg-emerald-950/20">★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-amber-400 font-semibold text-[11px] bg-amber-950/20">★★★★</td>
+                                    </tr>
+
+                                    <!-- 撥水性 -->
+                                    <tr>
+                                        <td class="py-2.5 px-1.5 font-medium text-slate-300">
+                                            💧 撥水性
+                                        </td>
+                                        <td class="py-2.5 px-1.5 text-center text-slate-400 text-[11px]">★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-blue-400 font-semibold text-[11px] bg-blue-950/20">★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-emerald-400 font-semibold text-[11px] bg-emerald-950/20">★★★★☆</td>
+                                        <td class="py-2.5 px-1.5 text-center text-amber-400 font-semibold text-[11px] bg-amber-950/20">★★★★★</td>
+                                    </tr>
+
+                                    <!-- 滑順度 -->
+                                    <tr>
+                                        <td class="py-2.5 px-1.5 font-medium text-slate-300">
+                                            ✨ 滑順度
+                                        </td>
+                                        <td class="py-2.5 px-1.5 text-center text-slate-400 text-[11px]">★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-blue-400 font-semibold text-[11px] bg-blue-950/20">★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-emerald-400 font-semibold text-[11px] bg-emerald-950/20">★★★★☆</td>
+                                        <td class="py-2.5 px-1.5 text-center text-amber-400 font-semibold text-[11px] bg-amber-950/20">★★★★★</td>
+                                    </tr>
+
+                                    <!-- 抗水斑能力 -->
+                                    <tr>
+                                        <td class="py-2.5 px-1.5 font-medium text-slate-300">
+                                            🧪 抗水斑
+                                        </td>
+                                        <td class="py-2.5 px-1.5 text-center text-slate-400 text-[11px]">★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-blue-400 font-semibold text-[11px] bg-blue-950/20">★★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-emerald-400 font-semibold text-[11px] bg-emerald-950/20">★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-amber-400 font-semibold text-[11px] bg-amber-950/20">★★★★</td>
+                                    </tr>
+
+                                    <!-- Cost -->
+                                    <tr>
+                                        <td class="py-2.5 px-1.5 font-medium text-slate-300">
+                                            💰 Cost
+                                        </td>
+                                        <td class="py-2.5 px-1.5 text-center text-slate-400 text-[11px]">★★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-blue-400 font-semibold text-[11px] bg-blue-950/20">★★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-emerald-400 font-semibold text-[11px] bg-emerald-950/20">★★★</td>
+                                        <td class="py-2.5 px-1.5 text-center text-amber-400 font-semibold text-[11px] bg-amber-950/20">★★★★</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
 
-                        <!-- 6F -->
-                        <div>
-                            <div class="flex items-baseline justify-between mb-1">
-                                <h4 class="text-base font-bold text-white">6F 高效均衡</h4>
-                                <span class="text-[10px] text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">高性價比</span>
+                        <!-- 產品特色簡述卡片 -->
+                        <div class="mt-4 pt-3 border-t border-slate-800 grid grid-cols-2 gap-2 text-[11px]">
+                            <div class="bg-slate-800/40 p-2 rounded border border-slate-800">
+                                <span class="text-blue-400 font-bold block mb-0.5">13F 頂尖旗艦</span>
+                                <span class="text-slate-400 text-[10px] leading-tight block">最強防護與抗水斑，極致耐久</span>
                             </div>
-                            <p class="text-xs text-slate-400 mb-2">均衡的性能表現，性價比出色，適合日常防護需求。</p>
-                            <div class="text-[11px] text-amber-300 space-x-2">
-                                <span>硬度 ★★★★</span>
-                                <span>撥水 ★★★★★</span>
-                                <span>滑順 ★★★★</span>
+                            <div class="bg-slate-800/40 p-2 rounded border border-slate-800">
+                                <span class="text-emerald-400 font-bold block mb-0.5">6F 高效均衡</span>
+                                <span class="text-slate-400 text-[10px] leading-tight block">高性價比，適合日常綜合防護</span>
+                            </div>
+                            <div class="bg-slate-800/40 p-2 rounded border border-slate-800">
+                                <span class="text-amber-400 font-bold block mb-0.5">28F 進階升級</span>
+                                <span class="text-slate-400 text-[10px] leading-tight block">五星超強撥水與滑順手感</span>
+                            </div>
+                            <div class="bg-slate-800/40 p-2 rounded border border-slate-800">
+                                <span class="text-slate-400 font-bold block mb-0.5">他社品</span>
+                                <span class="text-slate-500 text-[10px] leading-tight block">基礎防護，適合預算優先考量</span>
                             </div>
                         </div>
                     </div>
